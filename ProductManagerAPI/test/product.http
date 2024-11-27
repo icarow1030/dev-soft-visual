@@ -1,0 +1,13 @@
+
+### New Product
+POST http://localhost:5031/product
+Content-Type: application/json
+
+{
+    "name": "Product 1",
+    "price": 10.00,
+    "categoryId": "0ae8ed84-3ca0-4abd-a494-70e00ba238b3"
+}
+
+### Get Products
+GET http://localhost:5031/products

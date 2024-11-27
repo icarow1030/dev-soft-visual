@@ -1,0 +1,73 @@
+# O desafio aqui é criar um aplicativo.
+
+Desafio: Sistema de Gerenciamento de Produtos e Categorias
+Objetivo
+Criar uma aplicação de gerenciamento de produtos com categorias. A aplicação terá um backend utilizando 
+Minimal API com Entity Framework e SQLite, e um frontend em React para interação com o usuário. 
+A aplicação deve permitir as operações básicas de CRUD para produtos e categorias, além de 
+utilizar navegação e integração com a API.
+
+Especificações do Backend (Minimal API)
+Banco de Dados
+
+Crie um banco SQLite utilizando Entity Framework.
+Relacione Produtos e Categorias (um produto pertence a uma categoria, e uma categoria pode ter vários produtos).
+Modelos
+
+Categoria:
+
+Id (int)
+Nome (string)
+Produto:
+
+Id (int)
+Nome (string)
+Preco (decimal)
+CategoriaId (int, chave estrangeira para Categoria)
+Endpoints
+
+Categorias
+
+GET /categorias - Listar todas as categorias.
+POST /categorias - Criar uma nova categoria.
+PUT /categorias/{id} - Atualizar uma categoria existente.
+DELETE /categorias/{id} - Excluir uma categoria.
+Produtos
+
+GET /produtos - Listar todos os produtos (incluir o nome da categoria associada).
+GET /produtos/{id} - Obter detalhes de um produto específico.
+POST /produtos - Criar um novo produto.
+PUT /produtos/{id} - Atualizar um produto existente.
+DELETE /produtos/{id} - Excluir um produto.
+Requisições e Respostas
+
+Utilize os códigos de status HTTP adequados para cada operação (200, 201, 404, 400, etc.).
+Valide dados recebidos pela URL e pelo corpo da requisição.
+Especificações do Frontend (React)
+Interface
+
+Uma tela principal com navegação para Produtos e Categorias.
+Componentes individuais para listar, criar, editar e excluir produtos e categorias.
+Funcionalidades
+
+Categorias
+
+Listar categorias com opção de excluir.
+Formulário para adicionar/editar categorias.
+Produtos
+
+Listar produtos com nome, preço e categoria.
+Formulário para adicionar/editar produtos, incluindo seleção de categoria.
+Botão para excluir produtos.
+Integração com API
+
+Use Axios ou Fetch para consumir os endpoints do backend.
+Exiba mensagens de sucesso/erro ao completar operações.
+Interação com Elementos HTML
+
+Utilize eventos do React (ex.: onClick, onChange) para capturar interações do usuário.
+Valide os dados do formulário antes de enviá-los para a API.
+Extras (Se Houver Tempo)
+Adicione paginação ou filtragem na listagem de produtos e categorias.
+Mostre uma mensagem de confirmação antes de excluir algo.
+Estilize a aplicação com CSS ou bibliotecas como Tailwind ou Bootstrap.
