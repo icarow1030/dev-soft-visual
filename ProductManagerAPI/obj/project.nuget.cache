@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f6kSPzp1Gf8=",
+  "dgSpecHash": "Xz8QM9bkULA=",
   "success": true,
-  "projectFilePath": "C:\\MY SPACE\\Faculdade de Ciência da Computação\\4º Semestre\\Desenvolvimento de Software Visual\\Revisão Prova Desafio\\ProductManagerAPI\\ProductManagerAPI.csproj",
+  "projectFilePath": "c:\\MY SPACE\\Faculdade de Ciência da Computação\\4º Semestre\\Desenvolvimento de Software Visual\\Revisão Prova Desafio\\ProductManagerAPI\\ProductManagerAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\icaro\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\icaro\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

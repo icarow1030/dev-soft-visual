@@ -11,3 +11,9 @@ Content-Type: application/json
 
 ### Get Products
 GET http://localhost:5031/products
+
+### Get Product by Id
+GET http://localhost:5031/products/861c0859-beac-49d6-8e77-3af7b3db5ce6
+
+### Remove Product
+DELETE http://localhost:5031/product/d18f5a6d-42e7-4bdf-9996-830ccd90b0c2

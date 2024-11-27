@@ -1,5 +1,6 @@
 using API.DTOs;
 using API.Models;
+using Microsoft.EntityFrameworkCore;
 namespace API.Utils;
 
 public class Utils {
@@ -19,10 +20,11 @@ public class Utils {
     }
 
     public static Product ProductExists(AppDbContext context, string productId) {
-        if (!context.Products.Any(p => p.Id.Equals(productId))) {
+        var product = context.Products.Include(p => p.Category).FirstOrDefault(p => p.Id.Equals(productId));
+        if (product == null) {
             throw new Exception("Product not found");
         }
-        return context.Products.First(p => p.Id.Equals(productId));
+        return product;
     }
 
     public static void ProductAttributeValidation(Product product) {

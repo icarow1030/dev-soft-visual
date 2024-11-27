@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MY SPACE\\Faculdade de Ciência da Computação\\4º Semestre\\Desenvolvimento de Software Visual\\Revisão Prova Desafio\\ProductManagerAPI\\ProductManagerAPI.csproj": {}
+    "c:\\MY SPACE\\Faculdade de Ciência da Computação\\4º Semestre\\Desenvolvimento de Software Visual\\Revisão Prova Desafio\\ProductManagerAPI\\ProductManagerAPI.csproj": {}
   },
   "projects": {
-    "C:\\MY SPACE\\Faculdade de Ciência da Computação\\4º Semestre\\Desenvolvimento de Software Visual\\Revisão Prova Desafio\\ProductManagerAPI\\ProductManagerAPI.csproj": {
+    "c:\\MY SPACE\\Faculdade de Ciência da Computação\\4º Semestre\\Desenvolvimento de Software Visual\\Revisão Prova Desafio\\ProductManagerAPI\\ProductManagerAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MY SPACE\\Faculdade de Ciência da Computação\\4º Semestre\\Desenvolvimento de Software Visual\\Revisão Prova Desafio\\ProductManagerAPI\\ProductManagerAPI.csproj",
+        "projectUniqueName": "c:\\MY SPACE\\Faculdade de Ciência da Computação\\4º Semestre\\Desenvolvimento de Software Visual\\Revisão Prova Desafio\\ProductManagerAPI\\ProductManagerAPI.csproj",
         "projectName": "ProductManagerAPI",
-        "projectPath": "C:\\MY SPACE\\Faculdade de Ciência da Computação\\4º Semestre\\Desenvolvimento de Software Visual\\Revisão Prova Desafio\\ProductManagerAPI\\ProductManagerAPI.csproj",
+        "projectPath": "c:\\MY SPACE\\Faculdade de Ciência da Computação\\4º Semestre\\Desenvolvimento de Software Visual\\Revisão Prova Desafio\\ProductManagerAPI\\ProductManagerAPI.csproj",
         "packagesPath": "C:\\Users\\icaro\\.nuget\\packages\\",
-        "outputPath": "C:\\MY SPACE\\Faculdade de Ciência da Computação\\4º Semestre\\Desenvolvimento de Software Visual\\Revisão Prova Desafio\\ProductManagerAPI\\obj\\",
+        "outputPath": "c:\\MY SPACE\\Faculdade de Ciência da Computação\\4º Semestre\\Desenvolvimento de Software Visual\\Revisão Prova Desafio\\ProductManagerAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\icaro\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -3,9 +3,22 @@ using API.Models;
 using API.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add CORS policy
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
 builder.Services.AddDbContext<AppDbContext>();
 var app = builder.Build();
 
+app.UseCors("AllowAll");
 
 // --------------------------------------------
 // CRUD operations for Products
@@ -51,6 +64,25 @@ app.MapGet("/products", async (AppDbContext context) => {
 app.MapGet("/products/{id}", async (string id, AppDbContext context) => {
     try {
         var product = Utils.ProductExists(context, id);
+        return Results.Ok(Utils.ToProductCategoryDto(product));
+    } catch(Exception e) {
+        return Results.BadRequest(e.Message);
+    }
+});
+
+// Product: Update
+app.MapPut("/product/{id}", async (string id, Product updatedProduct, AppDbContext context) => {
+    try {
+        var product = Utils.ProductExists(context, id);
+        Utils.ProductAttributeValidation(updatedProduct);
+        Utils.CategoryExists(context, updatedProduct.CategoryId);
+
+        product.Name = updatedProduct.Name;
+        product.Price = updatedProduct.Price;
+        product.CategoryId = updatedProduct.CategoryId;
+        product.Category = await context.Categories.FindAsync(updatedProduct.CategoryId);
+
+        await context.SaveChangesAsync();
         return Results.Ok(Utils.ToProductCategoryDto(product));
     } catch(Exception e) {
         return Results.BadRequest(e.Message);
